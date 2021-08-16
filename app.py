@@ -28,9 +28,9 @@ def predict():
         #print(data)
         x = customer.get_data(res)
         if x[0] == 0:
-            result = "customer will leave"
-        else:
             result = "customer will not leave"
+        else:
+            result = "customer will leave"
         return render_template('result.html', result = result)
 
 @app.route("/", methods = ['GET', 'POST'])
