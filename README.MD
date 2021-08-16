@@ -1,7 +1,10 @@
 <center> <img src="https://images.squarespace-cdn.com/content/v1/588f9607bebafbc786f8c5f8/1607924812500-Y1JR8L6XP5NKF2YPHDUX/image6.png?format=1000w"> </center>
 
+_________________
 
-## <center> Customer Churn Prediction Notebook Documentation </center>
+**Web App Link**
+
+<center> <a href="https://mycustomerchurn.herokuapp.com/"> https://mycustomerchurn.herokuapp.com/ </a> </center>
 _________________
 
 
@@ -62,6 +65,18 @@ Each row represents a customer, each column contains customer’s attributes des
 * **Streaming TV:** Indicates if the customer uses their Internet service to stream television programing from a third party provider: Yes, No. The company does not charge an additional fee for this service.
 
 * **Streaming Movies:** Indicates if the customer uses their Internet service to stream movies from a third party provider: Yes, No. The company does not charge an additional fee for this service.
+
+_______________________________
+
+**About Web App**
+
+* Web app is build using Flask and deployed on Heroku.
+
+<center> <img src="churnpred.png"> </center>
+
+* Fill all the input boxes and click on submit button to know whether the customer will churn on not.
+
+**Thank you**
 
 
 
