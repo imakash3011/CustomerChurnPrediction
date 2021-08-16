@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Customer Churn Prediction App</title>
+  </head>
+  <body>
+    <section class="get_in_touch">
+        
+        <h1 class="title">Customer Churn Prediction</h1>
+
+        <form action="/predict"  method="POST">
+        <div class="container"> 
+            <div class="contact-form row"> 
+
+
+                <div class="form-field col-lg-3">
+                    <h5>Gender</h5>
+                    <select class="input-text" id="myid_Gender" name="Gender">
+                            
+                            <option class="selected" value="">Select Gender</option>
+                            <option value= 1 > Female </option>
+                            <option value= 0 > Male </option>
+                            
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>SeniorCitizen</h5>
+
+                    <select class="input-text" id="myid_SeniorCitizen" name="SeniorCitizen">
+                            <option class="selected" value="">Select SeniorCitizen</option>
+                            <option value="1" >Yes</option>
+                            <option value="0" >No</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-field col-lg-3">
+                    <h5>Partner</h5>
+                    <select class="input-text" id="myid_Partner" name="Partner">
+                            <option class="selected" value="">Select Partner</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+
+                <div class="form-field col-lg-3">
+                    <h5>Dependents</h5>
+                    <select class="input-text" name="Dependents">
+                            <option class="selected" value="" >Select Dependents</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>PhoneService</h5>
+                    <select class="input-text" name="PhoneService">
+                            <option class="selected" value="">Select PhoneService</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>MultipleLines</h5>
+                    <select class="input-text" name="MultipleLines">
+                            <option class="selected" value="">Select MultipleLines</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>OnlineSecurity</h5>
+                    <select class="input-text" name="OnlineSecurity">
+                            <option class="selected" value="">Select OnlineSecurity</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>OnlineBackup</h5>
+                    <select class="input-text" name="OnlineBackup">
+                            <option class="selected" value="">Select OnlineBackup</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>DeviceProtection</h5>
+                    <select class="input-text" name="DeviceProtection">
+                            <option class="selected" value="">Select DeviceProtection</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>TechSupport</h5>
+                    <select class="input-text" name="TechSupport">
+                            <option class="selected" value="">Select TechSupport</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>StreamingTV</h5>
+                    <select class="input-text" name="StreamingTV">
+                            <option class="selected" class="selected" value="">Select StreamingTV</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>Contract</h5>
+                    <select class="input-text" name="Contract">
+                            <option class="selected" value="">Select Contract</option>
+                            <option value="Month-to-month">Month-to-month</option>
+                            <option value="One year">One year</option>
+                            <option value="Two year">Two year</option>
+                    </select>
+                </div>
+
+
+                <div class="form-field col-lg-3">
+                    <h5>StreamingMovies</h5>
+                    <select class="input-text" name="StreamingMovies">
+                            <option class="selected" class="selected" value="">Select StreamingMovies</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>InternetService</h5>
+                    <select class="input-text" name="InternetService">
+                            <option class="selected" value="">Select InternetService</option>
+                            <option value="Month-to-month">No</option>
+                            <option value="One year">DSL</option>
+                            <option value="Two year">Fiber optic</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>PaperlessBilling</h5>
+                    <select class="input-text" name="PaperlessBilling">
+                            <option class="selected" value="">Select PaperlessBilling</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-3">
+                    <h5>PaymentMethod</h5>
+                    <select class="input-text" name="PaymentMethod">
+                            <option class="selected" value="">Select PaymentMethod</option>
+                            <option value="Electronic check">Electronic check</option>
+                            <option value="Mailed check">Mailed check</option>
+                            <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                            <option value="Credit card (automatic)">Credit card (automatic)</option>
+                    </select>
+                </div>
+
+                <div class="form-field col-lg-4">
+                    <h5>MonthlyCharges</h5>
+                    <input id="company" class="input-text" type="number"  id="myid_MonthlyCharges" name="MonthlyCharges" placeholder="Enter MonthlyCharges">
+                    <!-- <label for="company" class="label">Enter MonthlyCharges </label> -->
+                </div>
+
+                <div class="form-field col-lg-4">
+                    <h5>TotalCharges</h5>
+                    <input id="company" class="input-text" type="number" name="TotalCharges" placeholder="Enter TotalCharges">
+                    <!-- <label for="company" class="label">Enter TotalCharges </label> -->
+                </div>
+
+                <div class="form-field col-lg-4">
+                    <h5>Tenure</h5>
+                    <input id="company" class="input-text" type="number" name="Tenure" placeholder="Enter Tenure">
+                    <!-- <label for="company" class="label">Enter Tenure </label> -->
+                </div>
+
+
+                <div class="form-field col-lg-4">
+                    <input class="submit-btn" type="submit" value="submit" name="">
+                
+                </div> 
+
+            
+
+            </div>
+        </div>
+        </form>
+    </section>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
