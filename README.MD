@@ -5,6 +5,7 @@ _________________
 **Web App Link**
 
 <center> <a href="https://mycustomerchurn.herokuapp.com/"> https://mycustomerchurn.herokuapp.com/ </a> </center>
+
 _________________
 
 
@@ -26,7 +27,19 @@ Each row represents a customer, each column contains customer’s attributes des
 * Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
 * Demographic info about customers – gender, age range, and if they have partners and dependents
 
-**Details**
+____________________
+
+**About Web App**
+
+* Web app is build using Flask and deployed on Heroku.
+
+<center> <img src="churnpred.png"> </center>
+
+* Fill all the input boxes and click on submit button to know whether the customer will churn on not.
+
+_____________________
+
+**Details Description of Dataset**
 
 * **Churn Value:** 1 = the customer left the company this quarter. 0 = the customer remained with the company. Directly related to Churn Label.
 
@@ -68,13 +81,6 @@ Each row represents a customer, each column contains customer’s attributes des
 
 _______________________________
 
-**About Web App**
-
-* Web app is build using Flask and deployed on Heroku.
-
-<center> <img src="churnpred.png"> </center>
-
-* Fill all the input boxes and click on submit button to know whether the customer will churn on not.
 
 **Thank you**
 
